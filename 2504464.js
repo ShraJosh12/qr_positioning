@@ -22,15 +22,7 @@ function startScanner() {
             const place = JSON.parse(text);
             showMarkerAt(place.top, place.left);
             toggleScanner();
-
-            document.getElementById("name").innerText = "Name: " + place.name;
-            if (place.in_store) {
-                document.getElementById("status").innerText = "In store: Yes";
-        } else {
-                document.getElementById("status").innerText = "In store: No";
-            }
-
-        document.getElementById("price").innerText = "Price: " + place.price + "€";
+            
     ).catch(function (err) {
         console.error(err);
     });
@@ -43,5 +35,13 @@ function showMarkerAt(top, left) {
     marker.style.top = top;
     marker.style.left = left;
 
-
 }
+
+function inventory {
+    document.getElementById("name").innerText = "Name: " + place.name;
+if (place.in_store) {
+    document.getElementById("status").innerText = "In store: Yes";
+} else {
+    document.getElementById("status").innerText = "In store: No";
+}
+    document.getElementById("price").innerText = "Price: " + place.price + "€";
