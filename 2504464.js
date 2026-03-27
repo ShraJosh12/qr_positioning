@@ -45,3 +45,4 @@ if (stock.in_store) {
     document.getElementById("status").innerText = "In store: No";
 }
     document.getElementById("price").innerText = "Price: " + stock.price + "€";
+}
