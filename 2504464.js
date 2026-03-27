@@ -21,6 +21,7 @@ function startScanner() {
         function (text) {
             const place = JSON.parse(text);
             showMarkerAt(place.top, place.left);
+            inventory(stock);
             toggleScanner();
             
     ).catch(function (err) {
