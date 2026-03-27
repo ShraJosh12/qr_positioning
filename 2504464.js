@@ -40,10 +40,10 @@ function showMarkerAt(top, left) {
 
 function inventory(place) {
     document.getElementById("name").innerText = "Name: " + place.name;
-if (place.in_store) {
+    if (place.in_store) {
     document.getElementById("status").innerText = "In store: Yes";
-} else {
+    } else {
     document.getElementById("status").innerText = "In store: No";
-}
+    }
     document.getElementById("price").innerText = "Price: " + place.price + "€";
 }
