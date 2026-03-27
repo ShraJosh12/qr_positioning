@@ -21,7 +21,7 @@ function startScanner() {
         function (text) {
             const place = JSON.parse(text);
             showMarkerAt(place.top, place.left);
-            inventory(stock);
+            inventory(place);
             toggleScanner();
             
     ).catch(function (err) {
@@ -38,12 +38,12 @@ function showMarkerAt(top, left) {
 
 }
 
-function inventory(stock) {
-    document.getElementById("name").innerText = "Name: " + stock.name;
-if (stock.in_store) {
+function inventory(place) {
+    document.getElementById("name").innerText = "Name: " + place.name;
+if (place.in_store) {
     document.getElementById("status").innerText = "In store: Yes";
 } else {
     document.getElementById("status").innerText = "In store: No";
 }
-    document.getElementById("price").innerText = "Price: " + stock.price + "€";
+    document.getElementById("price").innerText = "Price: " + place.price + "€";
 }
