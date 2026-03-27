@@ -22,7 +22,7 @@ function startScanner() {
             const place = JSON.parse(text);
             showMarkerAt(place.top, place.left);
             toggleScanner();
-            
+        }
     ).catch(function (err) {
         console.error(err);
     });
