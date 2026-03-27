@@ -38,16 +38,17 @@ h1{
 
 #btn{
     background-color: var(--theme);
+    color: white;
+    padding: 12px 24px;
     cursor: pointer;
     border-radius: 50px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     transition: 0.3s;
 }
 
 #btn:hover{
-     background-color: #03a9f4;
-    box-shadow: 0 0 20px #03a9f4, 0 0 40px #03a9f4, 0 0 60px #03a9f4;
-    transform: scale(1.1);
+    background-color: #3aa300;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.3);
     
 }
 
