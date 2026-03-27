@@ -37,11 +37,11 @@ function showMarkerAt(top, left) {
 
 }
 
-function inventory {
-    document.getElementById("name").innerText = "Name: " + place.name;
+function inventory(stock) {
+    document.getElementById("name").innerText = "Name: " + stock.name;
 if (place.in_store) {
     document.getElementById("status").innerText = "In store: Yes";
 } else {
     document.getElementById("status").innerText = "In store: No";
 }
-    document.getElementById("price").innerText = "Price: " + place.price + "€";
+    document.getElementById("price").innerText = "Price: " + stock.price + "€";
