@@ -39,7 +39,7 @@ function showMarkerAt(top, left) {
 
 function inventory(stock) {
     document.getElementById("name").innerText = "Name: " + stock.name;
-if (place.in_store) {
+if (stock.in_store) {
     document.getElementById("status").innerText = "In store: Yes";
 } else {
     document.getElementById("status").innerText = "In store: No";
