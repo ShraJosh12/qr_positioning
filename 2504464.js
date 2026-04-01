@@ -39,10 +39,10 @@ function showMarkerAt(top, left) {
 }
 function inventory(place) {
     document.getElementById("name").innerText = "Name: " + place.name;
-    if (place.in_store) {
-    document.getElementById("status").innerText = "In store: Yes";
+    if (place.inStock) {
+    document.getElementById("stock").innerText = "In stock: Yes";
     } else {
-    document.getElementById("status").innerText = "In store: No";
+    document.getElementById("stock").innerText = "In stock: No";
     }
     document.getElementById("price").innerText = "Price: " + place.price + "€";
 }
